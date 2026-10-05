@@ -25,7 +25,7 @@ export const profile: Profile = {
   name: "Christopher Bryan S. Evangelista",
   title: "Full Stack Developer · Cloud & AI Engineer ",
   tagline:
-    "I build scalable full-stack products and AI-enabled automation — from onboarding agents that cut ramp-up time in half to semantic search that returns results in under 500ms.",
+    "I'm a developer who loves turning messy problems into tools people actually enjoy using. I work across the full stack and the cloud, with a growing focus on AI that makes everyday work easier.",
   phone: "0976-482-6989",
   email: "christopherbryanevangelista@gmail.com",
   linkedin: "chrisbryevangelista12",

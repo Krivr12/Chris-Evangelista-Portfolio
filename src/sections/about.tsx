@@ -22,17 +22,10 @@ export function About() {
         <Reveal delay={80}>
           <Card className="h-full">
             <p className="text-[0.95rem] leading-relaxed text-muted-foreground">
-              I'm {profile.name.split(" ")[0]}, a full stack developer and
-              cloud &amp; AI engineer based in {profile.location}. I graduated
-              Magna Cum Laude from the Polytechnic University of the
-              Philippines with a GWA of 1.19, and since then I've shipped
-              production systems ranging from agentic onboarding automation
-              to semantic search platforms serving thousands of users.
+              Hi!! I'm {profile.name.split(" ")[0]}, a developer from {profile.location} who loves turning ideas into products that work in the real world. I finished my degree at PUP with Magna Cum Laude honors, and I've been building ever since, from automation that gives teams their time back to platforms that make information easier to find.
             </p>
             <p className="mt-4 text-[0.95rem] leading-relaxed text-muted-foreground">
-              I care about building things that are fast, secure, and
-              actually used — not just demoed. Outside of shipping code, I
-              mentor other developers and speak on AI enablement.
+              I'd rather ship something people use than something that only looks good in a demo. And I'm happiest when I'm helping others learn along the way.
             </p>
           </Card>
         </Reveal>

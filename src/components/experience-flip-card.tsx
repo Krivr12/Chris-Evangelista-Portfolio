@@ -16,24 +16,19 @@ export function ExperienceFlipCard({
   return (
     <div 
       className="relative w-full h-[500px] cursor-pointer"
-      style={{
-        perspective: "1000px",
-      }}
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <div
-        className="relative w-full h-full transition-transform duration-500 ease-in-out"
+        className="relative w-full h-full transition-opacity duration-500 ease-in-out"
         style={{
-          transformStyle: "preserve-3d",
-          transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+          opacity: isFlipped ? 0 : 1,
+          pointerEvents: isFlipped ? "none" : "auto",
         }}
       >
         {/* Front of card */}
         <div
           className="absolute w-full h-full flex flex-col justify-between p-6 bg-card border border-border rounded-lg shadow-sm bg-cover bg-center"
           style={{
-            backfaceVisibility: "hidden",
-            WebkitBackfaceVisibility: "hidden",
             backgroundImage: experience.image ? `url(${experience.image})` : undefined,
           }}
         >
@@ -77,9 +72,8 @@ export function ExperienceFlipCard({
         <div
           className="absolute w-full h-full flex flex-col justify-between p-6 bg-card border border-border rounded-lg shadow-sm overflow-hidden"
           style={{
-            backfaceVisibility: "hidden",
-            WebkitBackfaceVisibility: "hidden",
-            transform: "rotateY(180deg)",
+            opacity: isFlipped ? 1 : 0,
+            pointerEvents: isFlipped ? "auto" : "none",
           }}
         >
           {/* Logo at top of back card */}
