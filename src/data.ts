@@ -182,35 +182,35 @@ export const beyondWorkItems: BeyondWorkItem[] = [
     id: "leading",
     title: "Leading",
     description:
-      "At first, I wasn't sure if I could lead people, but whenever an opportunity arose, I always accepted and led in the best way I could. Through these experiences, I discovered that leadership isn't about having all the answers—it's about empowering others to find theirs, creating an environment where people feel supported and motivated to do their best work.",
+      "I wasn't sure I could lead people. But every time the chance came, I said yes and gave it my best. Along the way I learned that leadership isn't about having every answer. It's about helping others find theirs, and building a space where people feel backed and want to do great work.",
     image: LeadingImg,
   },
   {
     id: "volunteering",
     title: "Volunteering",
     description:
-      "During college, volunteering in various tech communities like the AWSUG opened me to opportunities I never expected. Meeting people from different backgrounds and experience levels gave me insights I would never get in a classroom. These connections shaped my perspective on collaboration, problem-solving, and the importance of giving back to the community.",
+      "In college, I volunteered in tech communities like AWSUG, and it opened doors I never expected. I met people from all kinds of backgrounds and skill levels, and learned things no classroom could teach me. Those connections changed how I think about working together, solving problems, and giving back.",
     image: VolunteeringImg,
   },
   {
     id: "sharing",
     title: "Sharing",
     description:
-      "This is my way of giving back to the people who shared their knowledge and resources that shaped who I am today. Whether through mentoring, writing, or speaking, I believe in lifting others up the way I've been lifted. Sharing knowledge amplifies impact and creates a cycle of continuous learning across our community.",
+      "Many people shared what they knew so I could grow, and this is how I pay it forward. I mentor, write, and speak because I want to lift others the way I was lifted. When knowledge is shared, it doesn't shrink. It spreads, and the whole community learns faster.",
     image: SharingImg,
   },
   {
     id: "teaching",
     title: "Teaching",
     description:
-      "I believe the best way to learn is to teach. Explaining concepts to others forces me to deeply understand them and see gaps in my knowledge. Teaching isn't just about transferring information—it's about igniting curiosity, building confidence, and creating a culture where learning never stops.",
+      "The best way to learn something is to teach it. When I explain an idea to someone else, I find out how well I really understand it, and where I don't. But teaching is more than passing along facts. It's sparking curiosity, building confidence, and keeping the habit of learning alive.",
     image: TeachingImg,
   },
   {
     id: "playing",
     title: "Playing",
     description:
-      "A healthy body means a healthy mind. While tech evolves rapidly, I recognize that maintaining physical and mental well-being is essential for sustained growth. Balancing learning with fitness allows me to stay sharp, energized, and ready to tackle complex challenges with a fresh perspective.",
+      "A healthy body supports a healthy mind. Tech moves fast, and I can't keep up if I'm running on empty. Making time for fitness keeps me sharp and energized, and helps me face hard problems with a clear head.",
     image: PlayingImg,
   },
 ];
