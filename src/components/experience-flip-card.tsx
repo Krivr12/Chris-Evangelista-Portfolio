@@ -70,7 +70,7 @@ export function ExperienceFlipCard({
 
         {/* Back of card */}
         <div
-          className="absolute w-full h-full flex flex-col justify-between p-6 bg-card border border-border rounded-lg shadow-sm overflow-hidden"
+          className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-y-auto"
           style={{
             opacity: isFlipped ? 1 : 0,
             pointerEvents: isFlipped ? "auto" : "none",
@@ -78,7 +78,7 @@ export function ExperienceFlipCard({
         >
           {/* Logo at top of back card */}
           {logo && (
-            <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-white p-2 flex items-center justify-center">
+            <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-white p-2 flex items-center justify-center mb-4">
               <img
                 src={logo}
                 alt={`${experience.company} logo`}

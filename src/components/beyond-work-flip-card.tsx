@@ -47,7 +47,7 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
 
         {/* Back of card */}
         <div
-          className="absolute w-full h-full flex flex-col justify-between p-6 bg-card border border-border rounded-lg shadow-sm overflow-hidden"
+          className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-y-auto"
           style={{
             opacity: isFlipped ? 1 : 0,
             pointerEvents: isFlipped ? "auto" : "none",
