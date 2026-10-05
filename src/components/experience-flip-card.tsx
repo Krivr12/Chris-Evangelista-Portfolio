@@ -35,6 +35,8 @@ export function ExperienceFlipCard({
             backgroundImage: experience.image ? `url(${experience.image})` : undefined,
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
+            opacity: isFlipped ? 0 : 1,
+            pointerEvents: isFlipped ? "none" : "auto",
           }}
         >
           {/* Dark gradient at bottom for white text contrast */}
@@ -80,6 +82,8 @@ export function ExperienceFlipCard({
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
+            opacity: isFlipped ? 1 : 0,
+            pointerEvents: isFlipped ? "auto" : "none",
           }}
         >
           {/* Logo at top of back card */}
