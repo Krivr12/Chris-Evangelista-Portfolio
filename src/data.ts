@@ -40,10 +40,10 @@ export type StatItem = {
 };
 
 export const stats: StatItem[] = [
-  { id: "gwa", value: "1.19", label: "GWA · Magna Cum Laude" },
-  { id: "internships", value: "02+", label: "Internships / Roles" },
-  { id: "projects", value: "02+", label: "Shipped Full-Stack Projects" },
-  { id: "certs", value: "03", label: "Certifications" },
+  { id: "gwa", value: "1", label: "Year(s) Experience" },
+  { id: "internships", value: "2", label: "Developer Roles" },
+  { id: "projects", value: "2", label: "Shipped Full-Stack Projects" },
+  { id: "certs", value: "3", label: "Certifications" },
 ];
 
 export type ExperienceItem = {
