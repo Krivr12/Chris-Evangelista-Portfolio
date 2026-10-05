@@ -36,13 +36,7 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
           <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-b-lg pointer-events-none" />
 
           {/* Content wrapper */}
-          <div 
-            className="relative z-10 flex flex-col justify-between h-full"
-            style={{
-              opacity: isFlipped ? 0 : 1,
-              pointerEvents: isFlipped ? "none" : "auto",
-            }}
-          >
+          <div className="relative z-10 flex flex-col justify-between h-full">
             {/* Empty space at top */}
             <div />
 
@@ -63,6 +57,7 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
+            backgroundColor: "#141414",
           }}
         >
           {/* Content */}

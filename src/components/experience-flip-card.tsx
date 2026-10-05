@@ -43,13 +43,7 @@ export function ExperienceFlipCard({
           )}
 
           {/* Content wrapper */}
-          <div 
-            className="relative z-10 flex flex-col justify-between h-full"
-            style={{
-              opacity: isFlipped ? 0 : 1,
-              pointerEvents: isFlipped ? "none" : "auto",
-            }}
-          >
+          <div className="relative z-10 flex flex-col justify-between h-full">
             {/* Empty space at top */}
             <div />
 
@@ -86,6 +80,7 @@ export function ExperienceFlipCard({
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
+            backgroundColor: "#141414",
           }}
         >
           {/* Logo at top of back card */}
