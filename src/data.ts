@@ -2,6 +2,14 @@
 // To add a new job, project, cert, or activity: add a new object to the
 // relevant array below. No JSX/component edits required.
 
+import ChevronWorkPic from "@/assets/chevron-work-pic.jpg";
+import TambuliWorkPic from "@/assets/tambulilabs-work-pic.jpg";
+import LeadingImg from "@/assets/Leading.jpg";
+import VolunteeringImg from "@/assets/Volunteering.jpg";
+import SharingImg from "@/assets/Sharing.jpg";
+import TeachingImg from "@/assets/Teaching.jpg";
+import PlayingImg from "@/assets/Playing.jpg";
+
 export type Profile = {
   name: string;
   title: string;
@@ -61,7 +69,7 @@ export const experience: ExperienceItem[] = [
       "Built an onboarding agentic system using Power Platform and Copilot Studio, cutting onboarding time by ~50%.",
       "Served as a trainer for the AI Enablement / TechBlaze AI Cohort program.",
     ],
-    image: "src/assets/chevron-work-pic.jpg",
+    image: ChevronWorkPic,
   },
   {
     id: "tambuli-labs",
@@ -75,7 +83,7 @@ export const experience: ExperienceItem[] = [
       "Optimized workflows, reducing search operations from days to minutes.",
       "Shipped a full React/Django stack in a one-month sprint cycle.",
     ],
-    image: "src/assets/tambulilabs-work-pic.jpg",
+    image: TambuliWorkPic,
   },
 ];
 
@@ -175,35 +183,35 @@ export const beyondWorkItems: BeyondWorkItem[] = [
     title: "Leading",
     description:
       "At first, I wasn't sure if I could lead people, but whenever an opportunity arose, I always accepted and led in the best way I could. Through these experiences, I discovered that leadership isn't about having all the answers—it's about empowering others to find theirs, creating an environment where people feel supported and motivated to do their best work.",
-    image: "src/assets/Leading.jpg",
+    image: LeadingImg,
   },
   {
     id: "volunteering",
     title: "Volunteering",
     description:
       "During college, volunteering in various tech communities like the AWSUG opened me to opportunities I never expected. Meeting people from different backgrounds and experience levels gave me insights I would never get in a classroom. These connections shaped my perspective on collaboration, problem-solving, and the importance of giving back to the community.",
-    image: "src/assets/Volunteering.jpg",
+    image: VolunteeringImg,
   },
   {
     id: "sharing",
     title: "Sharing",
     description:
       "This is my way of giving back to the people who shared their knowledge and resources that shaped who I am today. Whether through mentoring, writing, or speaking, I believe in lifting others up the way I've been lifted. Sharing knowledge amplifies impact and creates a cycle of continuous learning across our community.",
-    image: "src/assets/Sharing.jpg",
+    image: SharingImg,
   },
   {
     id: "teaching",
     title: "Teaching",
     description:
       "I believe the best way to learn is to teach. Explaining concepts to others forces me to deeply understand them and see gaps in my knowledge. Teaching isn't just about transferring information—it's about igniting curiosity, building confidence, and creating a culture where learning never stops.",
-    image: "src/assets/Teaching.jpg",
+    image: TeachingImg,
   },
   {
     id: "playing",
     title: "Playing",
     description:
       "A healthy body means a healthy mind. While tech evolves rapidly, I recognize that maintaining physical and mental well-being is essential for sustained growth. Balancing learning with fitness allows me to stay sharp, energized, and ready to tackle complex challenges with a fresh perspective.",
-    image: "src/assets/Playing.jpg",
+    image: PlayingImg,
   },
 ];
 
