@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import type { BeyondWorkItem } from "@/data";
 
 interface BeyondWorkFlipCardProps {
@@ -72,18 +71,6 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
               </p>
             </div>
           </div>
-
-          {/* Back button */}
-          <Button
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsFlipped(false);
-            }}
-            variant="secondary"
-            size="sm"
-            className="w-full mt-4"
-          >
-          </Button>
         </div>
       </div>
     </div>

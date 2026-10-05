@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import type { ExperienceItem } from "@/data";
 
 interface ExperienceFlipCardProps {
@@ -117,18 +116,6 @@ export function ExperienceFlipCard({
               ))}
             </ul>
           </div>
-
-          {/* Back button */}
-          <Button
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsFlipped(false);
-            }}
-            variant="secondary"
-            size="sm"
-            className="w-full mt-4"
-          >
-          </Button>
         </div>
       </div>
     </div>
