@@ -50,7 +50,9 @@ export function Projects() {
                     <span className="font-mono text-xs uppercase tracking-[0.05em] text-accent-brand">
                       {project.dateRange}
                     </span>
-                    <CardTitle>{project.name}</CardTitle>
+                    <CardTitle className="text-2xl font-bold">
+                      {project.name}
+                    </CardTitle>
                     <p className="text-sm font-medium text-foreground/80">
                       {project.role}
                     </p>
