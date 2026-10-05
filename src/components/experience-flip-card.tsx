@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { CSSProperties } from "react";
 import { MapPin } from "lucide-react";
 import type { ExperienceItem } from "@/data";
 
@@ -7,6 +8,13 @@ interface ExperienceFlipCardProps {
   logo?: string;
 }
 
+// iOS Safari needs backface hiding declared on every child that gets its own
+// compositing layer (positioned / z-indexed elements), not just the face.
+const hideBackface: CSSProperties = {
+  WebkitBackfaceVisibility: "hidden",
+  backfaceVisibility: "hidden",
+};
+
 export function ExperienceFlipCard({
   experience,
   logo,
@@ -14,17 +22,19 @@ export function ExperienceFlipCard({
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div 
+    <div
       className="relative w-full h-[500px] cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
       style={{
         perspective: "1000px",
+        WebkitPerspective: "1000px",
       }}
     >
       <div
         className="relative w-full h-full transition-transform duration-500 ease-in-out"
         style={{
           transformStyle: "preserve-3d",
+          WebkitTransformStyle: "preserve-3d",
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
         }}
       >
@@ -32,41 +42,56 @@ export function ExperienceFlipCard({
         <div
           className="absolute w-full h-full flex flex-col justify-between p-6 bg-card border border-border rounded-lg shadow-sm bg-cover bg-center"
           style={{
-            backgroundImage: experience.image ? `url(${experience.image})` : undefined,
-            WebkitBackfaceVisibility: "hidden",
-            backfaceVisibility: "hidden",
+            backgroundImage: experience.image
+              ? `url(${experience.image})`
+              : undefined,
+            ...hideBackface,
+            // Own 3D layer, pushed slightly toward the viewer
+            transform: "rotateY(0deg) translateZ(1px)",
           }}
         >
           {/* Dark gradient at bottom for white text contrast */}
           {experience.image && (
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-b-lg pointer-events-none" />
+            <div
+              className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-b-lg pointer-events-none"
+              style={hideBackface}
+            />
           )}
 
           {/* Content wrapper */}
-          <div className="relative z-10 flex flex-col justify-between h-full">
+          <div
+            className="relative z-10 flex flex-col justify-between h-full"
+            style={hideBackface}
+          >
             {/* Empty space at top */}
             <div />
 
             {/* Bottom text section - all white text */}
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3" style={hideBackface}>
               {/* Role */}
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl font-bold text-white" style={hideBackface}>
                 {experience.role}
               </h3>
-              
+
               {/* Company */}
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-white" style={hideBackface}>
                 {experience.company}
               </p>
-              
+
               {/* Location */}
-              <p className="flex items-center gap-2 text-sm text-white">
+              <p
+                className="flex items-center gap-2 text-sm text-white"
+                style={hideBackface}
+              >
                 <MapPin className="w-4 h-4" />
                 {experience.location}
               </p>
-              
+
               {/* Time period */}
-              <span className="font-mono text-xs uppercase tracking-[0.05em] text-white/90 pt-2">
+              <span
+                className="font-mono text-xs uppercase tracking-[0.05em] text-white/90 pt-2"
+                style={hideBackface}
+              >
                 {experience.startDate} – {experience.endDate}
               </span>
             </div>
@@ -77,9 +102,8 @@ export function ExperienceFlipCard({
         <div
           className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-hidden"
           style={{
-            WebkitBackfaceVisibility: "hidden",
-            backfaceVisibility: "hidden",
-            transform: "rotateY(180deg)",
+            ...hideBackface,
+            transform: "rotateY(180deg) translateZ(1px)",
             backgroundColor: "#141414",
           }}
         >
