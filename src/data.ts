@@ -66,8 +66,8 @@ export const experience: ExperienceItem[] = [
     startDate: "Mar 2026",
     endDate: "Jul 2026",
     bullets: [
-      "Built an onboarding agentic system using Power Platform and Copilot Studio, cutting onboarding time by ~50%.",
-      "Served as a trainer for the AI Enablement / TechBlaze AI Cohort program.",
+      "Built an onboarding agentic system with Power Platform and Copilot Studio that cut onboarding time by about 50% and saved the team 3 to 4 hours per new hire.",
+      "Trained non-technical teams to build their own workflows with Copilot Studio through the TechBlaze AI Cohort, bringing AI adoption beyond the tech team.",
     ],
     image: ChevronWorkPic,
   },
@@ -79,9 +79,9 @@ export const experience: ExperienceItem[] = [
     startDate: "Nov 2025",
     endDate: "Mar 2026",
     bullets: [
-      "Delivered a performance tracking system covering 20,000 personnel.",
-      "Optimized workflows, reducing search operations from days to minutes.",
-      "Shipped a full React/Django stack in a one-month sprint cycle.",
+      "Engineered a performance tracking system for 20,000 personnel, giving leaders the data to guide task allocation and promotions.",
+      "Centralized personnel records so candidate searches that once took days now take minutes.",
+      "Delivered a full stack React and Django solution on time within a one-month deadline, using Shadcn/UI to move fast.",
     ],
     image: TambuliWorkPic,
   },
@@ -182,35 +182,35 @@ export const beyondWorkItems: BeyondWorkItem[] = [
     id: "leading",
     title: "Leading",
     description:
-      "I wasn't sure I could lead people. But every time the chance came, I said yes and gave it my best. Along the way I learned that leadership isn't about having every answer. It's about helping others find theirs, and building a space where people feel backed and want to do great work.",
+      "I wasn't sure I could lead people. Part of me worried I'd let them down. But every time the chance came, I said yes and gave it my best, even when I felt unprepared. Along the way I learned that leadership isn't about having every answer. It's about listening first, helping others find their own answers, and building a space where people feel backed and want to do great work. The best teams I've been part of weren't built on authority. They were built on trust.",
     image: LeadingImg,
   },
   {
     id: "volunteering",
     title: "Volunteering",
     description:
-      "In college, I volunteered in tech communities like AWSUG, and it opened doors I never expected. I met people from all kinds of backgrounds and skill levels, and learned things no classroom could teach me. Those connections changed how I think about working together, solving problems, and giving back.",
+      "In college, I started volunteering in tech communities like AWSUG, and it opened doors I never expected. I met people from all kinds of backgrounds and skill levels, from students just starting out to engineers with years of experience. Every conversation taught me something no classroom could. Those connections changed how I think about working together, solving problems, and giving back. Showing up for a community, even in small ways, ends up giving you far more than you put in.",
     image: VolunteeringImg,
   },
   {
     id: "sharing",
     title: "Sharing",
     description:
-      "Many people shared what they knew so I could grow, and this is how I pay it forward. I mentor, write, and speak because I want to lift others the way I was lifted. When knowledge is shared, it doesn't shrink. It spreads, and the whole community learns faster.",
+      "Many people shared what they knew so I could grow, and this is how I pay it forward. Free tutorials, patient answers, and honest advice from strangers shaped who I am today. I mentor, write, and speak because I want to lift others the way I was lifted. When knowledge is shared, it doesn't shrink. It spreads, and the whole community learns faster. Someone out there is stuck on the same problem I once had, and I want to be the reason they get unstuck.",
     image: SharingImg,
   },
   {
     id: "teaching",
     title: "Teaching",
     description:
-      "The best way to learn something is to teach it. When I explain an idea to someone else, I find out how well I really understand it, and where I don't. But teaching is more than passing along facts. It's sparking curiosity, building confidence, and keeping the habit of learning alive.",
+      "The best way to learn something is to teach it. When I explain an idea to someone else, I find out how well I really understand it, and where I don't. Those gaps push me to go back, dig deeper, and come out sharper. But teaching is more than passing along facts. It's sparking curiosity, building confidence, and keeping the habit of learning alive. Seeing someone finally get it after struggling is one of the best feelings I know.",
     image: TeachingImg,
   },
   {
     id: "playing",
     title: "Playing",
     description:
-      "A healthy body supports a healthy mind. Tech moves fast, and I can't keep up if I'm running on empty. Making time for fitness keeps me sharp and energized, and helps me face hard problems with a clear head.",
+      "A healthy body supports a healthy mind. Tech moves fast, and I can't keep up if I'm running on empty. Making time for fitness keeps me sharp and energized, and it gives my brain a break from the screen. Some of my best ideas show up when I'm away from my desk. Staying active helps me face hard problems with a clear head, and it reminds me that growth isn't only about code.",
     image: PlayingImg,
   },
 ];
