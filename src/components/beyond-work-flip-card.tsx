@@ -30,15 +30,19 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
             backgroundImage: `url(${item.image})`,
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
-            opacity: isFlipped ? 0 : 1,
-            pointerEvents: isFlipped ? "none" : "auto",
           }}
         >
           {/* Dark gradient at bottom for white text contrast */}
           <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-b-lg pointer-events-none" />
 
           {/* Content wrapper */}
-          <div className="relative z-10 flex flex-col justify-between h-full">
+          <div 
+            className="relative z-10 flex flex-col justify-between h-full"
+            style={{
+              opacity: isFlipped ? 0 : 1,
+              pointerEvents: isFlipped ? "none" : "auto",
+            }}
+          >
             {/* Empty space at top */}
             <div />
 
@@ -54,13 +58,11 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
 
         {/* Back of card */}
         <div
-          className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-y-auto"
+          className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-hidden"
           style={{
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
-            opacity: isFlipped ? 1 : 0,
-            pointerEvents: isFlipped ? "auto" : "none",
           }}
         >
           {/* Content */}

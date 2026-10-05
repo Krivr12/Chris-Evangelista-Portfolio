@@ -35,8 +35,6 @@ export function ExperienceFlipCard({
             backgroundImage: experience.image ? `url(${experience.image})` : undefined,
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
-            opacity: isFlipped ? 0 : 1,
-            pointerEvents: isFlipped ? "none" : "auto",
           }}
         >
           {/* Dark gradient at bottom for white text contrast */}
@@ -45,7 +43,13 @@ export function ExperienceFlipCard({
           )}
 
           {/* Content wrapper */}
-          <div className="relative z-10 flex flex-col justify-between h-full">
+          <div 
+            className="relative z-10 flex flex-col justify-between h-full"
+            style={{
+              opacity: isFlipped ? 0 : 1,
+              pointerEvents: isFlipped ? "none" : "auto",
+            }}
+          >
             {/* Empty space at top */}
             <div />
 
@@ -77,13 +81,11 @@ export function ExperienceFlipCard({
 
         {/* Back of card */}
         <div
-          className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-y-auto"
+          className="absolute w-full h-full flex flex-col p-6 bg-card border border-border rounded-lg shadow-sm overflow-hidden"
           style={{
             WebkitBackfaceVisibility: "hidden",
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
-            opacity: isFlipped ? 1 : 0,
-            pointerEvents: isFlipped ? "auto" : "none",
           }}
         >
           {/* Logo at top of back card */}
