@@ -79,7 +79,7 @@ export function BeyondWorkFlipCard({ item }: BeyondWorkFlipCardProps) {
               e.stopPropagation();
               setIsFlipped(false);
             }}
-            variant="outline"
+            variant="secondary"
             size="sm"
             className="w-full mt-4"
           >

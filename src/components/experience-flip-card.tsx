@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { ExperienceItem } from "@/data";
 
@@ -124,7 +124,7 @@ export function ExperienceFlipCard({
               e.stopPropagation();
               setIsFlipped(false);
             }}
-            variant="outline"
+            variant="secondary"
             size="sm"
             className="w-full mt-4"
           >

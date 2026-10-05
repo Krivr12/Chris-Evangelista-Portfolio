@@ -1,5 +1,3 @@
-import { Award } from "lucide-react";
-
 import { certifications } from "@/data";
 import { SectionContainer } from "@/components/section-container";
 import { SectionHeading } from "@/components/section-heading";
